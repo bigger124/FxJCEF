@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0"
+      prefWidth="1152.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ImageView fitHeight="90.0" fitWidth="1152.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+            </image>
+        </ImageView>
+        <ImageView fx:id="imageView_back" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icon/arrow_back_90x90.png"/>
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="pane_cef" layoutY="80.0" prefHeight="640.0" prefWidth="1152.0"/>
+
+    </children>
+</Pane>

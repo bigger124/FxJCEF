@@ -35,6 +35,7 @@ public class CefWebview {
     CefBrowser browser;
     CefApp app;
     CefClient client;
+    private static final String CEF_PATH = "L:\\data\\cef";
 
     public void start(Stage stage) throws Exception {
         initView(stage);
@@ -67,11 +68,10 @@ public class CefWebview {
     }
 
     private void initCef() {
-        String path = "L:\\data\\cef"; // your path, or put to system temp folder
         try {
             String libPath = System.getProperty("java.library.path");
-            if (!libPath.contains(path)) {
-                addLibraryDir(path);
+            if (!libPath.contains(CEF_PATH)) {
+                addLibraryDir(CEF_PATH);
             }
         } catch (Exception e) {
             e.printStackTrace();
